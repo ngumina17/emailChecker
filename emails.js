@@ -30,3 +30,4 @@ function emailCheck(arr) {
 }
 
 console.log(emailCheck(emails));
+
