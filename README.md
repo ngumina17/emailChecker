@@ -17,6 +17,8 @@
 - To run the server on your localhost, run the command `nodemon`
 - You can either run tests in your terminal or make a GET request in Postman to retrieve the output.
 
+#### Disclaimer: the installation instructions assume you have node and npm already installed on your local machine, along with Postman or any other API testing tool. 
+
 ### Input/ Output of Results
 - This particular app is taking in an array of emails(input) and is returning a string of a number(output). For example, for this input ```[
   "test.email+spam@gmail.com",
@@ -35,4 +37,3 @@ I.e. your request body should be an array.
 - If I were to continue working on this project, I would create another route that would return an array of clean and deduped emails. This would be useful for anyone who has a set of email addresses and needs to get the valid emails returned. 
 
 
-#### Disclaimer: the installation instructions assume you have node and npm already installed on your local machine, along with Postman or any other API testing tool. 
