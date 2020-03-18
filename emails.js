@@ -3,8 +3,14 @@ const emails = [
   "testemail@gmail.com",
   "test.email@gmail.com"
 ];
-//make a few more tests that return different values
+const test2 = [
+  "test.email+test@gmail.com",
+  "test.email@gmail.com",
+];
+
+//testing if we get the correct output, 
 console.assert(emailCheck(emails) === 1, "test1");
+console.assert(emailCheck(test2) === 1, "test2")
 console.log("test completed");
 
 function clean(email) {

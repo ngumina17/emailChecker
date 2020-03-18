@@ -1,15 +1,14 @@
 const express = require("express");
 const app = express();
 const parser = require("body-parser");
-var cors = require('cors')
+
 
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
-app.use(cors())
 
-const restaurantController = require("./controllers/restaurantController");
 
-app.use("/restaurants", restaurantController);
+const emailController = require("./controllers/emailController")
+app.use("/emails", emailController);
 
 app.get("/", (req, res) => {
   res.send("hitting default route");
