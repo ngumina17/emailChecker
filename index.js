@@ -2,12 +2,10 @@ const express = require("express");
 const app = express();
 const parser = require("body-parser");
 
-
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 
-
-const emailController = require("./controllers/emailController")
+const emailController = require("./controllers/emailController");
 app.use("/emails", emailController);
 
 app.get("/", (req, res) => {
